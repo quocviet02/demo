@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.js">
+</head>
+<style>
+    .cl1{
+        color: rgb(0, 123, 231);
+        font-size: 50px;
+    }
+    .cl1:hover{
+        font-weight: 600;
+        color: rgb(87, 61, 22);
+    }
+    .cl2{
+        color: rgba(19, 32, 32, 0.541);
+        text-align: center;
+        font-size: 100px;
+    }
+    .cl3{
+        color: rgb(210, 231, 15);
+        text-align: center;
+        font-size: 100px;
+    }
+   
+</style>
+<body>
+    <div class="box">FIST DEMO GITHUB</div>
+</body>
+<script>
+    var a1 = document.querySelector('.box');
+    a1.classList.add('cl1','cl2','cl3');
+    setInterval(() => {
+        a1.classList.toggle('cl3')
+    }, 2000);
+</script>
+</html>
